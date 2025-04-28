@@ -321,3 +321,17 @@ git remote add 원격이름 https주소
 ```bash
 git remote rename 옛이름 새이름
 ```
+
+### 4.5. 추천 작업 순서
+
+```bash
+ git add .
+ git commit -m "[docs]:깃학습"
+ git push origin main
+```
+
+### 4.6 깃허브의 소스를 다운로드 받아서 작업하는 법
+
+- 깃허브 주소를 주의
+- 기준은 `https`로 진행 중
+- 코드 소스 기준이 `ssh`면 인증을 다시 처리하는 과정 필요
