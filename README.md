@@ -404,3 +404,29 @@ git switch --track -c 생성브랜치명 원격브랜치명
 ```
 
 - 예) `git switch --track -c jeju remotes/origin/jeju`
+
+## 6. 깃허브 브랜치 삭제하기
+
+- 깃허브의 브랜치 모두 내려받기
+
+```bash
+git fetch --all
+```
+
+- 로컬 및 깃허브 브랜치 목록 모두 보기
+
+```bash
+git branch -a
+```
+
+- 깃허브의 브랜치 삭제하기
+
+```bash
+git push 저장소이름 --delete 브랜치이름
+```
+
+- 예) `git push origin --delete jeju`
+
+## 7. 가능하면 브랜치는 삭제하지 않기를 권장함
+
+## 7. 가능하면 commit의 내용은 삭제, 수정하지 않기를 권장함
