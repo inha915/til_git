@@ -13,7 +13,7 @@
     git --version
 ```
 
-- 출력창 확인``
+- 출력창 확인
 
 ## 3. VSCode 에 Git 설정하기
 
@@ -330,11 +330,11 @@ git remote rename 옛이름 새이름
  git push origin main
 ```
 
-### 4.6 깃허브의 소스를 다운로드 받아서 작업하는 법
+## 5. 깃허브의 소스를 복사(Clone)해서 작업하는 법
 
-- 깃허브 주소를 주의
-- 기준은 `https`로 진행 중
-- 코드 소스 기준이 `ssh`면 인증을 다시 처리하는 과정 필요
+- 깃허브 주소를 주의하셔야 합니다.
+- 코드 소스 기준은 `https` 로 진행 중입니다.
+- 코드 소스 기준이 `ssh` 면 인증을 다시 처리하는 과정 필요.
 
 ### 5.1. 실습
 
@@ -355,13 +355,52 @@ git clone 깃허브주소 .
 
 ```bash
 git status
+```
+
+```bash
 git branch -v
+```
+
+```bash
 git branch 브랜치명
 git switch 브랜치명
-작업진행
+```
+
+```bash
 git add .
 git commit -m "작업내용"
+```
+
+```bash
 git push origin 브랜치명
 ```
 
+<<<<<<< HEAD
 서울에서 작업완료!!!
+=======
+
+### 5.4. git push 이후 작업
+
+- jeju 폴더는 clone 을 하여 진행함.
+- `til_git 폴더는 clone 을 할 필요가 있을까요?`
+- til_git 은 이미 git 셋팅이 되어 있다. 그래서 clone 은 필요 없다.
+
+### 5.5. 기존 프로젝트에서 GitHub 브랜치 적용하기
+
+- 기존 프로젝트에서는 clone 하지 않음
+- 기존 프로젝트에서는 `fetch 사용`
+- 1. fetch 는 깃허브 에서 모든 브랜치 가져옮
+
+```bash
+git fetch --all
+```
+
+- 2. 브랜치 목록보기 (전체 즉, 로컬과 깃허브 브랜치 모두 )
+
+```bash
+git branch -a
+```
+
+- 3. `새롭게 작업한 깃허브 브랜치`를 `로컬 브랜치 생성 > 작업` 동시 진행하기
+     > > > > > > > jeju
+     > > > > > > > 제주 추가!!!!
